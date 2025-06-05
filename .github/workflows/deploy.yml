@@ -24,7 +24,7 @@ jobs:
           cd ~/program
           git add .
           git commit -m "Save local changes before pulling"
-          git pull origin main
+          git pull --no-rebase origin main
           source venv/bin/activate
           pip install -r requirements.txt
           python3 manage.py migrate
